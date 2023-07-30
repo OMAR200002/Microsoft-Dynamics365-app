@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\MD_CRM_CRUD_JWT_Auth.props" />
+</Project>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MD_CRM_CRUD_JWT_Auth", "MD_CRM_CRUD_JWT_Auth\MD_CRM_CRUD_JWT_Auth.csproj", "{F04D81BA-0AF2-4129-95D4-29F166A33616}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MD_CRM_CRUD_JWT_AUTH.Test", "MD_CRM_CRUD_JWT_AUTH.Test\MD_CRM_CRUD_JWT_AUTH.Test.csproj", "{A6215C7A-965F-45AE-A710-B073CB248454}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F04D81BA-0AF2-4129-95D4-29F166A33616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F04D81BA-0AF2-4129-95D4-29F166A33616}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F04D81BA-0AF2-4129-95D4-29F166A33616}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F04D81BA-0AF2-4129-95D4-29F166A33616}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6215C7A-965F-45AE-A710-B073CB248454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6215C7A-965F-45AE-A710-B073CB248454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6215C7A-965F-45AE-A710-B073CB248454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6215C7A-965F-45AE-A710-B073CB248454}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {963A67F2-29A4-43C4-B487-2E0A27695185}
+	EndGlobalSection
+EndGlobal

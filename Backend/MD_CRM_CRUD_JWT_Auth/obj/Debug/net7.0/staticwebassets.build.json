@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "15uHzARoeOa/lMOWsPKRjro4zSlUo5fyYZXzGc54vyM=",
+  "Source": "MD_CRM_CRUD_JWT_Auth",
+  "BasePath": "_content/MD_CRM_CRUD_JWT_Auth",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

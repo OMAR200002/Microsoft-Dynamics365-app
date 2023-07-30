@@ -1,0 +1,54 @@
+<div class="p-fluid p-5">
+    <form [formGroup]="editForm" (ngSubmit)="UpdateContact()">
+        <div class="p-fluid p-formgrid grid">
+            <div class="field col-12 md:col-6">
+                <label htmlFor="firstname">Firstname</label>
+                <input pInputText id="firstname" type="text" formControlName="firstname"/>
+                <small  class="text-red-600"
+                        *ngIf="!editForm.get('firstname')?.valid && editForm.get('firstname')?.touched"
+                >Firstname is required</small>
+            </div>
+            <div class="field col-12 md:col-6">
+                <label htmlFor="lastname">Lastname</label>
+                <input pInputText id="lastname" type="text" formControlName="lastname"/>
+                <small  class="text-red-600"
+                        *ngIf="!editForm.get('lastname')?.valid && editForm.get('lastname')?.touched"
+                >Lastname is required</small>
+            </div>
+            <div class="field col-12">
+                <label htmlFor="emailAddress">Email Address 1</label>
+                <input pInputText id="emailAddress" type="text" formControlName="emailaddress1"/>
+                <small  class="text-red-600"
+                        *ngIf="!editForm.get('emailaddress1')?.valid && editForm.get('emailaddress1')?.touched"
+                >Email Address is incorrect</small>
+            </div>
+            <div class="field col-12 md:col-6">
+                <label htmlFor="jobTitle">Job Title</label>
+                <input pInputText id="jobTitle" type="text" formControlName="jobtitle"/>
+            </div>
+            <div class="field col-12 md:col-3">
+                <label htmlFor="state">Gender</label>
+                <p-dropdown formControlName="gendercode" [options]="Genders" placeholder="{{getGender(contactUpdate.gendercode)}}" optionLabel="name"></p-dropdown>
+            </div>
+            <div class="field col-12 md:col-3">
+                <label htmlFor="Status">State</label>
+                <p-dropdown formControlName="statecode" [options]="Statuses" placeholder="{{getState(contactUpdate.statecode)}}" optionLabel="name"></p-dropdown>
+            </div>
+            <div class="field col-12 md:col-3">
+                <label htmlFor="Account Role">Account Role</label>
+                <p-dropdown formControlName="accountrolecode" [options]="AccountRoles" placeholder="{{getAccountRoles(contactUpdate.accountrolecode)}}" optionLabel="name"></p-dropdown>
+            </div>
+        </div>
+
+
+    <div class="grid justify-content-end">
+        <div class="col-2">
+            <button pButton pRipple label="Cancel"  type="button" class="p-button-secondary" (click)="CancelUpdate()"></button>
+        </div>
+        <div class="col-2">
+            <button pButton pRipple label="Update" type="submit" [disabled]="!editForm.valid" class="p-button-success" [loading]="isLoading"></button>
+        </div>
+    </div>
+    </form>
+</div>
+<p-toast></p-toast>
